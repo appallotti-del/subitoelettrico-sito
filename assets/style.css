@@ -54,6 +54,7 @@ section{padding:104px 0}
 .dark{background:var(--navy);color:var(--on-dark)}
 .dark h2,.dark h3{color:#fff}
 .dark .section-head p{color:var(--on-dark)}
+.grid-3 .card{padding:30px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .feature{background:var(--navy-2);border-radius:var(--r);padding:36px;border-top:4px solid var(--blue)}
 .feature .num{font-size:15px;font-weight:700;color:var(--blue);margin-bottom:22px;letter-spacing:.08em}
@@ -113,3 +114,8 @@ section{padding:104px 0}
   .site-header img{width:150px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* v3 */
+.badge{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--on-dark);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:8px 14px}
+.site-footer .payoff{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin:0 0 14px}
+.site-footer .legal-line{font-size:12px;opacity:.8;max-width:640px}
