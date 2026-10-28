@@ -3,6 +3,12 @@ Versione 1 - 26 ottobre 2026
 Informativa collegata: https://subitoelettrico.it/privacy/ (aggiornamento del 26 ottobre 2026)
 Titolare del trattamento: Alex Pallotti
 
+[PULSANTE]
+Iscrivimi al report
+
+[TESTO SOTTO IL PULSANTE]
+Titolare del trattamento: Alex Pallotti. Leggi l'informativa privacy: https://subitoelettrico.it/privacy/
+
 [CASELLA 1 - MARKETING E PROMOZIONI]
 Acconsento a ricevere via email comunicazioni promozionali, offerte e voucher da SubitoElettrico e da soggetti terzi appartenenti alle categorie indicate nell'informativa. Le email sono inviate da SubitoElettrico e i terzi non ricevono i miei dati per questo.
 
