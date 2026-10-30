@@ -1,0 +1,22 @@
+SubitoElettrico - testi del modulo di iscrizione
+Versione 2 - 30 ottobre 2026
+Informativa collegata: https://subitoelettrico.it/privacy/ (aggiornamento del 30 ottobre 2026)
+Titolare del trattamento: Alex Pallotti
+
+[PULSANTE]
+Iscrivimi al report
+
+[TESTO SOTTO IL PULSANTE]
+Titolare del trattamento: Alex Pallotti. Leggi l'informativa privacy: https://subitoelettrico.it/privacy/
+
+[CASELLA 1 - MARKETING DI SUBITOELETTRICO]
+Acconsento a ricevere via email comunicazioni promozionali, offerte e novità da SubitoElettrico.
+
+[CASELLA 2 - PROMOZIONI DI TERZI INVIATE DA SUBITOELETTRICO]
+Acconsento a ricevere via email, inviate da SubitoElettrico, promozioni e offerte di soggetti terzi del settore automotive e della mobilità elettrica. I terzi non ricevono i miei dati per questo.
+
+[CASELLA 3 - COMUNICAZIONE E CESSIONE A TERZI]
+Acconsento alla comunicazione o cessione del mio indirizzo email e dei miei dati di contatto professionali a terzi che operano nel settore automotive, nella mobilità elettrica e nei servizi collegati, che li tratteranno come autonomi titolari per proprie finalità promozionali e commerciali via email.
+
+[NOTA FINALE]
+Le caselle sono facoltative. Puoi revocarle in ogni momento e separatamente dal link "Gestisci le tue scelte" presente in ogni email, oppure disiscriverti da tutto con il link "Disiscriviti".
