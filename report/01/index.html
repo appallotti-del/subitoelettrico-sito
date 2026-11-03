@@ -4,21 +4,134 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hai cambiato mestiere senza cambiare insegna - SubitoElettrico Report 01</title>
-<meta name="description" content="Tre anni di cambiamenti attorno al salone, e le domande che ne sono arrivate al banco.">
+<meta name="description" content="Che cosa è cambiato in tre anni per chi vende auto, e che cosa chiedono oggi i clienti.">
 <link rel="canonical" href="https://subitoelettrico.it/report/01/">
 <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../../assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../../assets/style.css">
 <style>
-.report .sub{font-size:19px;color:var(--muted);margin:-8px 0 36px}
-.report h2{font-size:24px;margin:44px 0 14px}
-.report p{margin:0 0 16px;font-size:18px;line-height:1.7}
-.report .cta-line{margin-top:8px;font-weight:600;color:var(--ink)}
-.report .cta{margin:20px 0 8px}
-.report .cta-note{font-size:14px;color:var(--muted);margin-top:14px}
-.report .sources{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
-.report .sources h3{font-size:15px;margin-bottom:10px}
-.report .sources li{margin:0 0 6px;font-size:14px}
+.report .sub{font-size:19px;color:var(--muted);margin:-8px 0 28px}
+.report p{margin:0 0 14px;font-size:18px;line-height:1.65}
+.report .lead{font-size:21px;line-height:1.55;color:var(--ink)}
+.blk{position:relative;margin:36px 0;padding:28px 24px 14px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.blk h2{font-size:24px;margin:0 0 18px;padding-left:48px;line-height:1.25}
+.badge{position:absolute;left:24px;top:28px;width:34px;height:34px;border-radius:50%;background:#3D7BFF;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.stat{background:#EEF3FB;border-radius:12px;padding:20px 22px;margin:0 0 16px}
+.big{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.big .n{font-size:clamp(44px,9vw,64px);font-weight:800;letter-spacing:-1.5px;color:#0B1F3A;line-height:1}
+.big .n.hi{color:#3D7BFF}
+.big .arrow{font-size:32px;color:#5E6F86}
+.stat .what{margin:10px 0 0;font-size:17px;color:#33445C}
+.ringstat{display:flex;gap:22px;align-items:center}
+.ringstat .ring{width:140px;height:140px;flex:none}
+.ringstat .what{margin:0;font-size:18px}
+.hbars{margin:0 0 18px}
+.hrow{display:flex;align-items:center;gap:12px;margin:0 0 8px}
+.hrow .yr{width:44px;font-size:14px;color:#5E6F86}
+.hrow .trk{flex:1;background:#EEF3FB;border-radius:6px;height:26px;overflow:hidden}
+.hrow .bar{height:100%;width:var(--w);border-radius:6px}
+.hrow .b1{background:#B8C7DD}.hrow .b2{background:#3D7BFF}
+.hrow .val{width:48px;font-size:15px;color:#33445C}.hrow .val.strong{font-weight:700;color:#0B1F3A}
+.vbars{display:flex;gap:14px;align-items:flex-end;margin:0 0 18px}
+.vcol{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+.vv{font-weight:700;color:#0B1F3A;font-size:16px}
+.vtrk{height:150px;width:100%;display:flex;align-items:flex-end;justify-content:center;background:#EEF3FB;border-radius:8px;overflow:hidden}
+.vbar{width:100%;height:var(--h);border-radius:6px 6px 0 0}
+.vl{font-size:13px;color:#5E6F86;text-align:center;line-height:1.3}
+.so{font-weight:600;color:#0B1F3A}
+.report .src{font-size:13px;color:var(--muted);margin:4px 0 12px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
+.tile{background:#EEF3FB;border-radius:12px;padding:18px}
+.tile svg{width:40px;height:40px;margin-bottom:8px}
+.tile h3{font-size:17px;margin:0 0 6px;color:#0B1F3A}
+.tile p{font-size:15px;line-height:1.5;margin:0;color:#33445C}
+.gap{border-left:4px solid #3D7BFF;padding-left:14px;color:#0B1F3A}
+.recap{margin:36px 0;padding:26px 24px;border-radius:16px;background:#0B1F3A;color:#fff}
+.recap h2{color:#fff;font-size:22px;margin:0 0 16px}
+.rgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rc{background:rgba(255,255,255,.08);border-radius:12px;padding:14px;font-size:14px;line-height:1.4;color:#DCE6F7}
+.rc span{display:block;font-size:34px;font-weight:800;color:#A9C4FF;margin-bottom:4px;line-height:1.1}
+.data{margin:28px 0;border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+.data summary{cursor:pointer;font-weight:600;color:#0B1F3A}
+.data .dd{margin-top:14px;font-size:14px;color:#33445C}
+.data h3{font-size:15px;margin:16px 0 6px;color:#0B1F3A}
+.data li{font-size:14px;margin:0 0 6px;line-height:1.55}
+.next{padding-bottom:20px}
+.next h2{padding-left:0}
+.report .ask{background:var(--blue-soft);border-radius:12px;padding:20px 24px;margin:0 0 20px;font-size:17px}
+.report .ask a{font-weight:600}
+.report .cta-line{font-weight:600;color:var(--ink)}
+.report .cta{margin:16px 0 8px}
+.report .cta-note{font-size:14px;color:var(--muted)}
+@media(max-width:640px){
+ .blk{padding:24px 16px 10px}.blk h2{font-size:21px;padding-left:44px}.badge{left:16px;top:24px}
+ .tiles{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr 1fr}
+ .ringstat{flex-direction:column;align-items:flex-start}
+ .vl{font-size:12px}
+}
+/* animazioni minime: solo con JS e senza preferenza per ridurre il movimento */
+@media(prefers-reduced-motion:no-preference){
+ .js [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+ .js [data-reveal].in{opacity:1;transform:none}
+ .js [data-reveal] .bar{width:0;transition:width 1s ease .2s}
+ .js [data-reveal].in .bar{width:var(--w)}
+ .js [data-reveal] .vbar{height:0;transition:height 1s ease .2s}
+ .js [data-reveal].in .vbar{height:var(--h)}
+ .js [data-reveal] .arc{stroke-dashoffset:var(--full);transition:stroke-dashoffset 1.2s ease .2s}
+ .js [data-reveal].in .arc{stroke-dashoffset:var(--off)}
+}
+.arc{stroke-dashoffset:var(--off)}
+.cap{font-size:14px;color:#5E6F86;margin:6px 0 10px}
+.bgroup{margin:0 0 12px}
+.bname{font-weight:700;color:#0B1F3A;font-size:15px;margin:0 0 4px}
+.mult{display:inline-block;margin-left:8px;padding:1px 8px;border-radius:10px;background:#3D7BFF;color:#fff;font-size:12px;font-weight:700}
+.hrow .val{width:56px}
+.mrow{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 10px}
+.mlabel{width:100%;font-size:15px;color:#33445C}.mlabel em{color:#5E6F86;font-style:normal;font-size:13px}
+.mrow .trk{flex:1;background:#EEF3FB;border-radius:6px;height:22px;overflow:hidden}
+.mrow .bar{height:100%;width:var(--w);border-radius:6px;background:#3D7BFF}
+.mrow .val{width:48px;font-size:15px}
+.read,.think{margin:16px 0}
+.read h3,.think h3{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:#3D7BFF;margin:0 0 6px}
+.read p,.think p{margin:0 0 10px}
+.think{display:flex;gap:16px;align-items:flex-start;background:#EEF3FB;border-radius:14px;padding:18px}
+.think img{width:64px;height:auto;flex:none}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:#33445C;margin:0 0 8px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.dumb{margin:0 0 14px}
+.dlabel{font-size:15px;font-weight:600;color:#0B1F3A;margin:0 0 6px}.dlabel em{font-weight:400;font-style:normal;color:#5E6F86;font-size:13px;margin-left:6px}
+.dtrk{position:relative;height:22px;background:#EEF3FB;border-radius:11px}
+.dline{position:absolute;top:10px;height:2px;left:var(--b);width:calc(var(--a) - var(--b));background:#B8C7DD}
+.dot{position:absolute;top:3px;width:16px;height:16px;border-radius:50%;margin-left:-8px;left:var(--l)}
+.d1{background:#0B1F3A}.d2{background:#3D7BFF}.d3{background:#A9C4FF;border:1px solid #6E8FD6;box-sizing:border-box}
+.recap .thesis{font-size:22px;line-height:1.4;color:#fff;margin:0 0 18px}
+.recap .rgrid{grid-template-columns:repeat(3,1fr)}
+.recap .rnote{font-size:14px;color:#9FB2CC;margin:16px 0 0}
+@media(max-width:640px){.recap .rgrid{grid-template-columns:1fr}.think{flex-direction:column}.think img{width:52px}.recap .thesis{font-size:19px}}
+@media(prefers-reduced-motion:no-preference){
+ .js [data-reveal] .dot.d2,.js [data-reveal] .dot.d3{left:var(--l0);transition:left 1.2s cubic-bezier(.3,.7,.2,1) .3s}
+ .js [data-reveal].in .dot.d2,.js [data-reveal].in .dot.d3{left:var(--l)}
+ .js [data-reveal] .dline{width:0;left:var(--a);transition:all 1.2s cubic-bezier(.3,.7,.2,1) .3s}
+ .js [data-reveal].in .dline{left:var(--b);width:calc(var(--a) - var(--b))}
+}
+.join{position:relative;margin:44px 0 24px;padding:36px 28px 28px;border-radius:20px;background:linear-gradient(135deg,#0B1F3A 0%,#16335E 100%);color:#fff;overflow:hidden}
+.join .jtony{position:absolute;right:20px;top:18px;width:96px;height:auto}
+.jeye{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:#A9C4FF;margin:0 0 8px!important;font-weight:600}
+.join h2{color:#fff;font-size:30px;line-height:1.2;margin:0 0 14px;padding-right:110px}
+.join .jlead{color:#DCE6F7;font-size:18px;margin:0 0 22px!important;padding-right:110px}
+.jsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 26px}
+.js1{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px}
+.js1 span{display:inline-flex;width:28px;height:28px;border-radius:50%;background:#3D7BFF;color:#fff;font-weight:800;align-items:center;justify-content:center;font-size:14px}
+.js1 h3{color:#fff;font-size:17px;margin:10px 0 6px}
+.js1 p{color:#C9D6EA;font-size:15px!important;line-height:1.5!important;margin:0!important}
+.jcta{text-align:center;margin:0 0 14px!important}
+.btn-big{display:inline-block;background:#3D7BFF;color:#fff!important;font-weight:700;font-size:19px;padding:18px 40px;border-radius:12px;text-decoration:none;box-shadow:0 8px 24px rgba(61,123,255,.45)}
+.btn-big:hover{background:#2F68E6}
+.jnote{font-size:13px!important;color:#9FB2CC;text-align:center;line-height:1.5!important}
+.jnote a,.jalt a{color:#fff}
+.jalt{font-size:14px!important;color:#9FB2CC;text-align:center;margin:10px 0 0!important}
+@media(max-width:640px){.jsteps{grid-template-columns:1fr}.join h2{font-size:24px;padding-right:70px}.join .jtony{width:64px}.join .jlead{padding-right:0}.join{padding:28px 18px 22px}}
+@media(prefers-reduced-motion:no-preference){.btn-big{animation:pulse 2.4s ease-in-out 1s 3}@keyframes pulse{50%{transform:scale(1.04)}}}
 </style>
 </head>
 <body>
@@ -26,7 +139,7 @@
 <header class="site-header">
   <div class="wrap">
     <a href="../../" aria-label="SubitoElettrico, home"><img src="../../assets/img/logo-subitoelettrico.png" alt="SubitoElettrico - per chi vende auto" width="231" height="56"></a>
-    <nav><a href="../../#contatto">Contatti</a></nav>
+    <nav><a href="#iscriviti">Iscriviti</a></nav>
   </div>
 </header>
 
@@ -34,40 +147,153 @@
   <div class="wrap">
     <p class="eyebrow">SubitoElettrico Report - Numero 1</p>
     <h1>Hai cambiato mestiere senza cambiare insegna</h1>
-    <p class="sub">Tre anni di cambiamenti attorno al salone, e le domande che ne sono arrivate al banco.</p>
-    <p>Un martedì qualunque entra un cliente con il telefono già aperto su tre confronti. Non chiede lo sconto. Chiede dove ricaricherà, quanto spenderà al mese e che cosa succede alla batteria dopo otto anni. Dieci anni fa la risposta stava nel listino. Oggi non ci sta.</p>
-    <p>Questo primo numero non parla di elettrico. Parla di te, o meglio del salone in cui lavori: nell'ultimo triennio è cambiato quasi tutto quello che gli sta intorno, e l'elettrico è solo il punto in cui i cambiamenti si vedono tutti insieme.</p>
-    <h2>1. Il listino da difendere cambia ogni sei mesi</h2>
-    <p>Nel 2024 i marchi cinesi hanno immatricolato in Italia 74.500 vetture, il 4,8% del mercato. Nel 2025 sono state 128.600, l'8,4%. Nello stesso anno il mercato totale è sceso del 2,1%, intorno a un milione e mezzo di auto. In un mercato che cala, la crescita di qualcuno è per forza la perdita di qualcun altro.</p>
-    <p>Il 2026 accelera. Nei primi sette mesi dell'anno BYD è passata da 11.528 a 33.973 immatricolazioni, Leapmotor da 1.938 a 25.398, Omoda&amp;Jaecoo da 6.691 a 24.692: tre marchi che sommati valgono circa 84.000 vetture contro circa 20.000 dell'anno prima, mentre l'intero mercato cresce dell'8,9%. Nello stesso periodo Ford perde il 23% e Hyundai il 27%. Non tutto è colpa dei cinesi: la fonte stessa attribuisce il calo di Ford alla fine della Focus e quello di Hyundai alla mancanza di novità.</p>
-    <p>Che cosa significa in salone: chi vende un marchio storico si trova a confrontarsi ogni mese con concorrenti che tre anni fa non c'erano. Chi vende più marchi deve imparare a raccontarne di nuovi, con listini, garanzie e tecnologie che non conosceva. In entrambi i casi la conoscenza del prodotto, che era un vantaggio, diventa un lavoro che si rifà da capo.</p>
-    <h2>2. Il cliente arriva dopo aver già confrontato</h2>
-    <p>Nel 2025 in Italia ci sono stati 3.221.145 passaggi di proprietà di auto usate, il 2,1% in più del 2024, con 208 passaggi ogni 100 auto nuove immatricolate. Sono i dati dell'ACI. Tradotto: per ogni auto nuova che esce dal tuo piazzale, più di due usate cambiano proprietario altrove. E i passaggi delle elettriche usate sono cresciuti del 40%: anche chi vuole un'elettrica ha una strada che non passa dal nuovo.</p>
-    <p>Sul modo in cui si decide manca un dato italiano comparabile, e qui usiamo uno americano (CarGurus con NielsenIQ, 3.030 acquirenti, 2025), che indica una direzione e non una misura per l'Italia. Il 61% ha visitato due o più concessionarie, contro il 54% dell'anno prima. Il 53% considera tre o più marchi già all'inizio, contro il 43%. L'83% preferisce fare più cose da casa, contro il 72% del 2022. E l'86% vuole comunque vedere l'auto di persona.</p>
-    <p>Quest'ultimo numero è quello che ti riguarda. Il cliente fa il confronto da solo, ma la decisione finale la prende guardando l'auto e chi gliela vende. Il salone non è sparito: è diventato il punto dove si chiudono i dubbi che il telefono non ha chiuso.</p>
-    <h2>3. Le domande sono cambiate più delle auto</h2>
-    <p>In una ricerca britannica (Cox Automotive Europe, 2.008 automobilisti, fine 2025) il 79% non ha mai guidato un'elettrica. Tra chi non ne guida, il 66% teme per l'autonomia; tra chi ha fatto un test drive scende al 57%, tra i proprietari al 50%. Per la batteria le percentuali sono 60%, 46% e 23%; per l'accesso alla ricarica pubblica 47%, 33% e 12%. Solo il 29% dichiara di capire bene gli incentivi. In un'altra indagine dello stesso gruppo il 49% dice che i concessionari dovrebbero fare di più per l'adozione, e il 25% chiede dimostrazioni su uso, gestione e ricarica domestica.</p>
-    <p>I dati sono britannici, ma la lezione è leggibile anche qui. Le paure calano con l'esperienza diretta, non con le argomentazioni. E le domande del cliente non riguardano più solo la vettura: riguardano la casa, il condominio, il costo al mese, gli incentivi, il valore tra otto anni. Sono domande a cui il venditore non è stato formato a rispondere, perché non facevano parte del mestiere.</p>
-    <h2>4. Che cosa fanno i mercati che sono qualche passo avanti</h2>
-    <p>Non esiste ancora, che sia pubblico e misurato, un caso di concessionario che abbia trovato la formula, e non fingiamo il contrario. Esistono però pratiche che ritornano. Nel Regno Unito Cox Automotive Europe suggerisce ai concessionari di mettere sul tavolo una tabella mensile di costo tra elettrica e endotermica, di chiedere presto dove il cliente ricaricherà, di offrire pacchetti con la ricarica domestica e di fornire un report sullo stato batteria per gli usati elettrici. In Norvegia, dove la rete è più avanti di noi, i gruppi plurimarca stanno lavorando soprattutto su ciò che viene dopo la vendita, con officine specializzate e operatività separata per l'assistenza, per non perdere il cliente quando l'auto compie qualche anno.</p>
-    <p>Nessuna di queste pratiche è una rivoluzione. Sono tre cose semplici: parlare di soldi al mese e non solo di prezzo, capire come vive il cliente, restare nella sua vita dopo la consegna. Funzionano perché spostano la conversazione da ciò che il venditore sa a ciò che al cliente serve.</p>
-    <h2>Dove andiamo da qui</h2>
-    <p>Questo è il primo numero di un report che esce a cadenza regolare. Nei prossimi parleremo delle domande sulla ricarica che i clienti fanno davvero e di come rispondere senza trasformare il banco in un convegno, dei numeri che contano per un salone medio-piccolo, e di che cosa si può costruire in concreto per far sì che l'elettrico smetta di essere una fatica in più.</p>
-    <p class="cta-line">Se ti è servito, iscriviti per ricevere i prossimi numeri.</p>
-    <p class="cta"><a class="btn btn-primary" href="https://e0fe6896.sibforms.com/serve/MUIFAIJdRVqk5Xha9LY-mc96Kf79JB7TmCG6zI6FQNcdV5NDkPRPhSyToJR9AvgnxpNebh-_LlvMGFCLqefhPdA8BUzTcV6qJLNhhU-00Nv-Mc0hNhz_iZ2-C3QUhA-gQrx6NxLYbkeqmgOh9waqIPQAuvt3_8ZwZMCoE9YrofJZdwKQ1enP1KcyB6nyNgL7hiPT4rvD2Vi5QF7U2g==">Iscrivimi al report</a></p>
-    <p class="cta-note">Titolare del trattamento: Alex Pallotti. Leggi l'<a href="https://subitoelettrico.it/privacy/">informativa privacy</a>. Le caselle del modulo sono facoltative e puoi revocarle in ogni momento.</p>
+    <p class="sub">Che cosa è cambiato in tre anni per chi vende auto, e che cosa chiedono oggi i clienti.</p>
 
-    <div class="sources">
-      <h3>Fonti</h3>
-      <ul>
-      <li>UNRAE, immatricolazioni per marchio: dati riportati da Automoto.it (20 gennaio 2026) e alVolante (7 agosto 2026).</li>
-      <li>ACI, bollettino Auto-Trend, passaggi di proprietà 2025: dati riportati da ANSA (13 gennaio 2026) e HDmotori (14 gennaio 2026).</li>
-      <li>CarGurus con NielsenIQ, Consumer Insights 2025, 3.030 acquirenti negli Stati Uniti (3 dicembre 2025).</li>
-      <li>Cox Automotive Europe, 2026 UK EV adoption and perceptions report, 2.008 automobilisti nel Regno Unito, rilevazione di fine 2025 (riportato da AM).</li>
-      <li>Cox Automotive Europe con Regit, oltre 2.000 consumatori nel Regno Unito (13 marzo 2025).</li>
-      <li>AM, G. Mercer, sul mercato norvegese e sul post-vendita.</li>
-      </ul>
-    </div>
+    <p class="lead">Un martedì qualunque entra un cliente con il telefono già aperto su tre confronti. Non chiede lo sconto. Chiede dove ricaricherà, quanto spenderà al mese e che cosa succede alla batteria dopo otto anni.</p>
+    <p>Abbiamo messo insieme i dati pubblici più solidi che abbiamo trovato, italiani quando esistono, esteri quando mancano, e li abbiamo letti. Ogni blocco ha tre parti: il dato, che cosa ci dice e che cosa ne pensiamo noi. La terza parte è un'opinione e la chiamiamo così.</p>
+
+    <section class="blk" data-reveal>
+      <div class="badge">1</div>
+      <h2>Il listino da difendere cambia ogni sei mesi</h2>
+      <div class="stat">
+        <div class="big"><span class="n">4,8%</span><span class="arrow">→</span><span class="n hi cnt" data-to="8.4" data-dec="1" data-suf="%">8,4%</span></div>
+        <p class="what">la quota dei marchi cinesi sulle immatricolazioni italiane, 2024 contro 2025</p>
+      </div>
+      <p class="cap">Immatricolazioni in Italia, gennaio-luglio, tre marchi</p>
+      <div class="bgroup"><div class="bname">BYD<span class="mult">x2,9</span></div>
+        <div class="hrow"><span class="yr">2025</span><div class="trk"><div class="bar b1" style="--w:32%"></div></div><span class="val">11.528</span></div>
+        <div class="hrow"><span class="yr">2026</span><div class="trk"><div class="bar b2" style="--w:94%"></div></div><span class="val strong">33.973</span></div></div>
+      <div class="bgroup"><div class="bname">Leapmotor<span class="mult">x13</span></div>
+        <div class="hrow"><span class="yr">2025</span><div class="trk"><div class="bar b1" style="--w:5.4%"></div></div><span class="val">1.938</span></div>
+        <div class="hrow"><span class="yr">2026</span><div class="trk"><div class="bar b2" style="--w:70.6%"></div></div><span class="val strong">25.398</span></div></div>
+      <div class="bgroup"><div class="bname">Omoda&amp;Jaecoo<span class="mult">x3,7</span></div>
+        <div class="hrow"><span class="yr">2025</span><div class="trk"><div class="bar b1" style="--w:18.6%"></div></div><span class="val">6.691</span></div>
+        <div class="hrow"><span class="yr">2026</span><div class="trk"><div class="bar b2" style="--w:68.6%"></div></div><span class="val strong">24.692</span></div></div>
+      <div class="read"><h3>Che cosa ci dice</h3>
+        <p>Nel 2025 il mercato scende del 2,1% e i marchi cinesi passano da 74.500 a 128.600 vetture: se il totale cala e qualcuno cresce, qualcun altro perde. Nel 2026 il mercato cresce dell'8,9%, ma questi tre marchi passano da circa 20.000 a circa 84.000 vetture nei primi sette mesi, più che quadruplicati. La crescita non è distribuita, è concentrata.</p></div>
+      <div class="think"><img src="../../assets/img/tony-hint.png" alt="Tony" width="64" height="auto"><div><h3>Che cosa ne pensiamo noi</h3>
+        <p>Il problema del concessionario non è la concorrenza in sé, è il ritmo. Se il listino cambia ogni sei mesi, la conoscenza del prodotto è un vantaggio con la data di scadenza, e una competenza che scade si rinnova, non si difende. Il vantaggio che resta è quello che non dipende dal modello: sapere come si vive con l'auto, quanto costa al mese, dove si ricarica, che cosa succede dopo la consegna.</p></div></div>
+      <p class="src">Fonte: UNRAE, via Automoto e alVolante. Il totale 2025 usa una definizione ampia di marchi cinesi, i dati 2026 una più stretta: per questo non li sommiamo.</p>
+    </section>
+
+    <section class="blk" data-reveal>
+      <div class="badge">2</div>
+      <h2>Il cliente confronta da solo e chiude con te</h2>
+      <div class="stat ringstat">
+        <svg class="ring" viewBox="0 0 140 140" role="img" aria-label="86 per cento" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="70" cy="70" r="52" fill="none" stroke="#DCE6F7" stroke-width="16"/>
+  <circle class="arc" cx="70" cy="70" r="52" fill="none" stroke="#3D7BFF" stroke-width="16" stroke-linecap="round" transform="rotate(-90 70 70)" stroke-dasharray="326.7" style="--off:45.7;--full:326.7"/>
+  <text x="70" y="79" text-anchor="middle" font-size="30" font-weight="800" fill="#0B1F3A" font-family="Inter,sans-serif">86%</text>
+</svg>
+        <p class="what">degli acquirenti vuole comunque vedere l'auto di persona</p>
+      </div>
+      <p class="cap">Come si muove l'acquirente americano, 2025</p>
+      <div class="mrow"><div class="mlabel">Preferisce fare più cose da casa <em>(72% nel 2022)</em></div><div class="trk"><div class="bar b2" style="--w:83%"></div></div><span class="val strong">83%</span></div>
+      <div class="mrow"><div class="mlabel">Ha visitato due o più concessionarie <em>(54% un anno prima)</em></div><div class="trk"><div class="bar b2" style="--w:61%"></div></div><span class="val strong">61%</span></div>
+      <div class="mrow"><div class="mlabel">Considera tre o più marchi fin dall'inizio <em>(43% un anno prima)</em></div><div class="trk"><div class="bar b2" style="--w:53%"></div></div><span class="val strong">53%</span></div>
+      <div class="read"><h3>Che cosa ci dice</h3>
+        <p>Il percorso si è diviso in due. La ricerca è migrata sul telefono, la conferma è rimasta fisica. Il cliente arriva dopo aver confrontato più marchi e visita più concessionarie di prima: le tre barre sono salite rispetto agli anni precedenti.</p></div>
+      <div class="think"><img src="../../assets/img/tony-hint.png" alt="Tony" width="64" height="auto"><div><h3>Che cosa ne pensiamo noi</h3>
+        <p>Il salone ha cambiato mestiere: non presenta più il prodotto, che il cliente ha già visto, ma risolve ciò che lo schermo non risolve. E se il cliente visita due concessionarie che vendono la stessa auto, sceglie tra le due in base a chi gli ha risposto meglio sul resto. Il dato è americano e l'Italia può differire, ma la direzione ci sembra credibile. È un'ipotesi che vorremmo confrontare con la tua esperienza.</p></div></div>
+      <p class="src">Fonte: CarGurus con NielsenIQ, 3.030 acquirenti, Stati Uniti, 2025.</p>
+    </section>
+
+    <section class="blk" data-reveal>
+      <div class="badge">3</div>
+      <h2>Le domande sono cambiate più delle auto</h2>
+      <div class="stat">
+        <div class="big"><span class="n">60%</span><span class="arrow">→</span><span class="n hi cnt" data-to="23" data-dec="0" data-suf="%">23%</span></div>
+        <p class="what">la paura per la batteria, tra chi non ha mai guidato un'elettrica e chi ne possiede una</p>
+      </div>
+      <p class="cap">Quanto si preoccupa chi non guida una EV, chi ha fatto un test drive, chi ne possiede una (Regno Unito)</p>
+      <div class="legend"><span><i style="background:#0B1F3A"></i>Non guida</span><span><i style="background:#3D7BFF"></i>Test drive</span><span><i style="background:#A9C4FF"></i>Possiede</span></div>
+      <div class="dumb"><div class="dlabel">Autonomia <em>da 66% a 50%, meno 24%</em></div>
+        <div class="dtrk"><div class="dline" style="--a:94.3%;--b:71.4%"></div>
+          <div class="dot d1" style="--l:94.3%"></div><div class="dot d2" style="--l:81.4%;--l0:94.3%"></div><div class="dot d3" style="--l:71.4%;--l0:94.3%"></div></div></div>
+      <div class="dumb"><div class="dlabel">Batteria <em>da 60% a 23%, meno 62%</em></div>
+        <div class="dtrk"><div class="dline" style="--a:85.7%;--b:32.9%"></div>
+          <div class="dot d1" style="--l:85.7%"></div><div class="dot d2" style="--l:65.7%;--l0:85.7%"></div><div class="dot d3" style="--l:32.9%;--l0:85.7%"></div></div></div>
+      <div class="dumb"><div class="dlabel">Ricarica pubblica <em>da 47% a 12%, meno 74%</em></div>
+        <div class="dtrk"><div class="dline" style="--a:67.1%;--b:17.1%"></div>
+          <div class="dot d1" style="--l:67.1%"></div><div class="dot d2" style="--l:47.1%;--l0:67.1%"></div><div class="dot d3" style="--l:17.1%;--l0:67.1%"></div></div></div>
+      <div class="read"><h3>Che cosa ci dice</h3>
+        <p>Le tre paure non scendono allo stesso modo. Già dopo un solo test drive batteria e ricarica pubblica calano di 14 punti ciascuna, l'autonomia di 9. Tra chi possiede un'elettrica, la ricarica pubblica preoccupa meno di un inglese su otto, mentre l'autonomia continua a preoccuparne uno su due.</p></div>
+      <div class="think"><img src="../../assets/img/tony-hint.png" alt="Tony" width="64" height="auto"><div><h3>Che cosa ne pensiamo noi</h3>
+        <p>Batteria e ricarica sono in gran parte paure di ciò che non si conosce, e si sciolgono con l'esperienza. L'autonomia resiste perché è anche un limite che chi guida incontra davvero. Per un concessionario è il dato più utile del report, perché indica dove intervenire: un test drive che comprenda una ricarica vera, in una colonnina pubblica, tocca le due paure che calano di più. Non l'abbiamo trovato misurato. È un'ipotesi, costa poco e si può provare già sabato.</p></div></div>
+      <p class="src">Fonte: Cox Automotive Europe, 2026 UK EV report, 2.008 automobilisti, fine 2025. Il 79% non ha mai guidato un'elettrica.</p>
+    </section>
+
+    <section class="blk" data-reveal>
+      <div class="badge">4</div>
+      <h2>Che cosa fanno i mercati un passo avanti</h2>
+      <div class="tiles">
+        <div class="tile t1"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="5" fill="none" stroke="#3D7BFF" stroke-width="3"/><path d="M6 19h36" stroke="#3D7BFF" stroke-width="3"/><circle cx="16" cy="29" r="3" fill="#3D7BFF"/></svg><h3>Soldi al mese, non solo prezzo</h3><p>Una tabella mensile di costo tra elettrica e endotermica.</p></div>
+        <div class="tile t2"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c-7 0-12 5-12 12 0 9 12 24 12 24s12-15 12-24c0-7-5-12-12-12z" fill="none" stroke="#3D7BFF" stroke-width="3"/><circle cx="24" cy="18" r="4.5" fill="#3D7BFF"/></svg><h3>Dove ricarica, chiesto presto</h3><p>Prima del preventivo, con un pacchetto per la ricarica di casa.</p></div>
+        <div class="tile t3"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 24a14 14 0 1 1 4 10" fill="none" stroke="#3D7BFF" stroke-width="3" stroke-linecap="round"/><path d="M6 36l4-2 2 5" fill="none" stroke="#3D7BFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Restare dopo la consegna</h3><p>Post-vendita dedicato e stato batteria certificato sugli usati.</p></div>
+      </div>
+      <div class="read"><h3>Che cosa ci dice</h3>
+        <p>Le pratiche suggerite nel Regno Unito da Cox Automotive Europe e osservate in Norvegia hanno una cosa in comune: spostano la conversazione dal prezzo all'uso. Nessuna fonte pubblica che abbiamo trovato misura però l'effetto sulle vendite, cioè confronta chi offre soluzioni di ricarica con chi non le offre. Esistono intenzioni dichiarate, non vendite: le trovi nella sezione dati.</p></div>
+      <div class="think"><img src="../../assets/img/tony-hint.png" alt="Tony" width="64" height="auto"><div><h3>Che cosa ne pensiamo noi</h3>
+        <p>L'assenza del dato è già un'informazione: il mercato sta ancora indovinando. Un concessionario piccolo può permettersi di provare in una settimana quello che un grande gruppo discute per un anno. Chi comincia a contare, anche solo in quante trattative ha parlato di ricarica e quante si sono chiuse, avrà tra sei mesi il dato che oggi non esiste.</p></div></div>
+      <p class="src">Fonti: Cox Automotive Europe (Regno Unito), AM sul mercato norvegese.</p>
+    </section>
+
+    <section class="recap" data-reveal>
+      <h2>La nostra tesi</h2>
+      <p class="thesis">Il cliente arriva sapendo l'auto e ignorando la vita con l'auto. Chi risponde sulla seconda vende, chi ripete la prima si fa superare da chi risponde.</p>
+      <div class="rgrid">
+        <div class="rc"><span>1</span>Il vantaggio della concessionaria è passato dalla conoscenza del prodotto alla risposta sul dopo-acquisto.</div>
+        <div class="rc"><span>2</span>La ricarica è il punto più facile da portare in trattativa, perché è la paura che cala di più con l'esperienza.</div>
+        <div class="rc"><span>3</span>Nessuno misura ancora l'effetto: chi comincia a contare ha un vantaggio che si compra solo con il tempo.</div>
+      </div>
+      <p class="rnote">Sono tre nostre opinioni, non dati. Su questo lavoriamo e ne parleremo nei prossimi numeri.</p>
+    </section>
+
+    <details class="data">
+      <summary>Dati e fonti complete</summary>
+      <div class="dd">
+        <h3>Usato</h3>
+        <ul><li>ACI: 3.221.145 passaggi di proprietà nel 2025 (+2,1%), 208 ogni 100 auto nuove. Elettriche usate +40%.</li></ul>
+        <h3>Altri marchi, gennaio-luglio 2026</h3>
+        <ul><li>Ford -23% e Hyundai -27%: la fonte attribuisce il calo di Ford alla fine della Focus e quello di Hyundai alla mancanza di novità.</li></ul>
+        <h3>Paure per esperienza di guida (Regno Unito, fine 2025)</h3>
+        <ul>
+          <li>Autonomia: 66% chi non guida una EV, 57% chi ha fatto un test drive, 50% i proprietari. Batteria: 60%, 46%, 23%. Ricarica pubblica: 47%, 33%, 12%.</li>
+          <li>Il 29% dichiara di capire bene gli incentivi. Il 49% dice che i concessionari dovrebbero fare di più per l'adozione, il 25% chiede dimostrazioni su uso, gestione e ricarica domestica (Cox Automotive Europe con Regit, 2025).</li>
+        </ul>
+        <h3>Intenzioni sulla ricarica</h3>
+        <ul>
+          <li>Stati Uniti (Escalent EVForward, oltre 1.300 persone, 2024): il 71% sceglierebbe più volentieri un'elettrica da un marchio che gestisce per intero l'installazione della ricarica domestica; il 36% si dice a proprio agio a gestirla da solo. Il soggetto è il costruttore, non il concessionario.</li>
+          <li>Regno Unito: il 42% ritiene che concessionari e costruttori dovrebbero offrire pacchetti con la wallbox.</li>
+        </ul>
+        <h3>Fonti</h3>
+        <ul>
+        <li>UNRAE, immatricolazioni per marchio: dati riportati da Automoto.it (20 gennaio 2026) e alVolante (7 agosto 2026).</li>
+        <li>ACI, bollettino Auto-Trend, passaggi di proprietà 2025: dati riportati da ANSA (13 gennaio 2026) e HDmotori (14 gennaio 2026).</li>
+        <li>CarGurus con NielsenIQ, Consumer Insights 2025, 3.030 acquirenti negli Stati Uniti (3 dicembre 2025).</li>
+        <li>Cox Automotive Europe, 2026 UK EV adoption and perceptions report, 2.008 automobilisti nel Regno Unito, rilevazione di fine 2025 (riportato da AM).</li>
+        <li>Cox Automotive Europe con Regit, oltre 2.000 consumatori nel Regno Unito (13 marzo 2025).</li>
+        <li>Escalent EVForward, 2024 Charging Experience DeepDive, oltre 1.300 persone negli Stati Uniti (riportato da InsideEVs, 11 marzo 2025, e da AUTO Connected Car News, 16 marzo 2025).</li>
+        <li>AM, G. Mercer, sul mercato norvegese e sul post-vendita.</li>
+        </ul>
+      </div>
+    </details>
+
+    <section class="join" id="iscriviti">
+      <img class="jtony" src="../../assets/img/tony-hint.png" alt="Tony" width="96">
+      <p class="jeye">Il prossimo numero</p>
+      <h2>Iscriviti e decidi tu di che cosa parliamo</h2>
+      <p class="jlead">Questo report non lo scriviamo per riempire una casella di posta. Lo scriviamo per chi vende auto e vuole risposte da dare ai propri clienti. Più ci dici di te, più le risposte saranno tue.</p>
+      <div class="jsteps">
+        <div class="js1"><span>1</span><h3>Ricevi i prossimi numeri</h3><p>Un tema per volta, i dati letti e la nostra opinione. Gratis, ti cancelli con un clic.</p></div>
+        <div class="js1"><span>2</span><h3>Raccontaci chi sei</h3><p>Ruolo, tipo di concessionaria, marchi e volumi: così i numeri parlano della tua realtà, non di una media.</p></div>
+        <div class="js1"><span>3</span><h3>Dicci che cosa ti frena</h3><p>Che cosa rende difficile vendere l'elettrico ai tuoi clienti: ciò che ci indichi diventa il tema dei prossimi numeri.</p></div>
+      </div>
+      <p class="jcta"><a class="btn btn-big" href="https://e0fe6896.sibforms.com/serve/MUIFAIJdRVqk5Xha9LY-mc96Kf79JB7TmCG6zI6FQNcdV5NDkPRPhSyToJR9AvgnxpNebh-_LlvMGFCLqefhPdA8BUzTcV6qJLNhhU-00Nv-Mc0hNhz_iZ2-C3QUhA-gQrx6NxLYbkeqmgOh9waqIPQAuvt3_8ZwZMCoE9YrofJZdwKQ1enP1KcyB6nyNgL7hiPT4rvD2Vi5QF7U2g==">Iscrivimi al report</a></p>
+      <p class="jnote">Serve solo l'email, le domande sono facoltative. Titolare del trattamento: Alex Pallotti. Leggi l'<a href="https://subitoelettrico.it/privacy/">informativa privacy</a>; le caselle del modulo sono facoltative e puoi revocarle in ogni momento.</p>
+      <p class="jalt">Preferisci scrivere due righe? <a href="mailto:tony@subitoelettrico.it">tony@subitoelettrico.it</a></p>
+    </section>
+
   </div>
 </main>
 
@@ -80,6 +306,16 @@
     <nav aria-label="Note legali"><a href="https://subitoelettrico.it/privacy/">Privacy</a></nav>
   </div>
 </footer>
-
+<script>
+(function(){try{
+ var d=document.documentElement;d.classList.add('js');
+ var els=[].slice.call(document.querySelectorAll('[data-reveal]'));
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+ function cnt(root){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;[].forEach.call(root.querySelectorAll('.cnt'),function(e){var to=parseFloat(e.getAttribute('data-to')),dec=parseInt(e.getAttribute('data-dec')||'0',10),suf=e.getAttribute('data-suf')||'',t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1),v=to*(1-Math.pow(1-p,3));e.textContent=v.toFixed(dec).replace('.',',')+suf;if(p<1)requestAnimationFrame(f);else e.textContent=to.toFixed(dec).replace('.',',')+suf}requestAnimationFrame(f)})}
+ var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');cnt(x.target);io.unobserve(x.target)}})},{threshold:.2});
+ els.forEach(function(e){io.observe(e)});
+ setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000);
+}catch(e){}})();
+</script>
 </body>
 </html>
