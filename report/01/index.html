@@ -133,13 +133,14 @@
 @media(max-width:640px){.jsteps{grid-template-columns:1fr}.join h2{font-size:24px;padding-right:70px}.join .jtony{width:64px}.join .jlead{padding-right:0}.join{padding:28px 18px 22px}}
 @media(prefers-reduced-motion:no-preference){.btn-big{animation:pulse 2.4s ease-in-out 1s 3}@keyframes pulse{50%{transform:scale(1.04)}}}
 </style>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="0596ba2b-445c-493e-aaa9-b0ec2191fe0b" data-domains="subitoelettrico.it"></script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="wrap">
     <a href="../../" aria-label="SubitoElettrico, home"><img src="../../assets/img/logo-subitoelettrico.png" alt="SubitoElettrico - per chi vende auto" width="231" height="56"></a>
-    <nav><a href="#iscriviti">Iscriviti</a></nav>
+    <nav><a href="#iscriviti" data-umami-event="iscriviti-intestazione">Iscriviti</a></nav>
   </div>
 </header>
 
@@ -289,7 +290,7 @@
         <div class="js1"><span>2</span><h3>Raccontaci chi sei</h3><p>Ruolo, tipo di concessionaria, marchi e volumi: così i numeri parlano della tua realtà, non di una media.</p></div>
         <div class="js1"><span>3</span><h3>Dicci che cosa ti frena</h3><p>Che cosa rende difficile vendere l'elettrico ai tuoi clienti: ciò che ci indichi diventa il tema dei prossimi numeri.</p></div>
       </div>
-      <p class="jcta"><a class="btn btn-big" href="https://e0fe6896.sibforms.com/serve/MUIFAIJdRVqk5Xha9LY-mc96Kf79JB7TmCG6zI6FQNcdV5NDkPRPhSyToJR9AvgnxpNebh-_LlvMGFCLqefhPdA8BUzTcV6qJLNhhU-00Nv-Mc0hNhz_iZ2-C3QUhA-gQrx6NxLYbkeqmgOh9waqIPQAuvt3_8ZwZMCoE9YrofJZdwKQ1enP1KcyB6nyNgL7hiPT4rvD2Vi5QF7U2g==">Iscrivimi al report</a></p>
+      <p class="jcta"><a class="btn btn-big" data-umami-event="iscriviti-pulsante" href="https://e0fe6896.sibforms.com/serve/MUIFAIJdRVqk5Xha9LY-mc96Kf79JB7TmCG6zI6FQNcdV5NDkPRPhSyToJR9AvgnxpNebh-_LlvMGFCLqefhPdA8BUzTcV6qJLNhhU-00Nv-Mc0hNhz_iZ2-C3QUhA-gQrx6NxLYbkeqmgOh9waqIPQAuvt3_8ZwZMCoE9YrofJZdwKQ1enP1KcyB6nyNgL7hiPT4rvD2Vi5QF7U2g==">Iscrivimi al report</a></p>
       <p class="jnote">Serve solo l'email, le domande sono facoltative. Titolare del trattamento: Alex Pallotti. Leggi l'<a href="https://subitoelettrico.it/privacy/">informativa privacy</a>; le caselle del modulo sono facoltative e puoi revocarle in ogni momento.</p>
       <p class="jalt">Preferisci scrivere due righe? <a href="mailto:tony@subitoelettrico.it">tony@subitoelettrico.it</a></p>
     </section>
@@ -316,6 +317,21 @@
  els.forEach(function(e){io.observe(e)});
  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},4000);
 }catch(e){}})();
+</script>
+<script>
+(function(){
+ if(!('IntersectionObserver' in window))return;
+ var mete=[['.recap','vista-tesi'],['#iscriviti','vista-iscriviti']];
+ mete.forEach(function(m){
+  var el=document.querySelector(m[0]);if(!el)return;
+  var fatto=false;
+  var io=new IntersectionObserver(function(en){
+   if(fatto||!en[0].isIntersecting||!window.umami)return;
+   fatto=true;window.umami.track(m[1]);io.disconnect();
+  },{threshold:.3});
+  io.observe(el);
+ });
+})();
 </script>
 </body>
 </html>
