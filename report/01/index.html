@@ -132,6 +132,15 @@
 .jalt{font-size:14px!important;color:#9FB2CC;text-align:center;margin:10px 0 0!important}
 @media(max-width:640px){.jsteps{grid-template-columns:1fr}.join h2{font-size:24px;padding-right:70px}.join .jtony{width:64px}.join .jlead{padding-right:0}.join{padding:28px 18px 22px}}
 @media(prefers-reduced-motion:no-preference){.btn-big{animation:pulse 2.4s ease-in-out 1s 3}@keyframes pulse{50%{transform:scale(1.04)}}}
+.dl{display:flex;gap:10px;max-width:560px;margin:0 auto 14px;flex-wrap:wrap}
+.dl input[type=email]{flex:1 1 260px;font:inherit;font-size:18px;padding:16px 18px;border-radius:12px;border:0;color:#0B1F3A;min-width:0}
+.dl .btn-big{border:0;cursor:pointer;font-family:inherit;flex:0 0 auto}
+.dl .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.topdl{margin:4px 0 8px!important;font-size:16px!important}
+.topdl a{color:#3D7BFF;font-weight:600;text-decoration:none}
+.site-header nav a+a{margin-left:18px}
+@media(max-width:640px){.dl .btn-big{width:100%}}
 </style>
 <script defer src="https://cloud.umami.is/script.js" data-website-id="0596ba2b-445c-493e-aaa9-b0ec2191fe0b" data-domains="subitoelettrico.it"></script>
 </head>
@@ -140,7 +149,7 @@
 <header class="site-header">
   <div class="wrap">
     <a href="../../" aria-label="SubitoElettrico, home"><img src="../../assets/img/logo-subitoelettrico.png" alt="SubitoElettrico - per chi vende auto" width="231" height="56"></a>
-    <nav><a href="#iscriviti" data-umami-event="iscriviti-intestazione">Iscriviti</a></nav>
+    <nav><a href="../">Archivio</a> <a href="#scarica" data-umami-event="scarica-intestazione">Scarica il PDF</a></nav>
   </div>
 </header>
 
@@ -152,6 +161,7 @@
 
     <p class="lead">Un martedì qualunque entra un cliente con il telefono già aperto su tre confronti. Non chiede lo sconto. Chiede dove ricaricherà, quanto spenderà al mese e che cosa succede alla batteria dopo otto anni.</p>
     <p>Abbiamo messo insieme i dati pubblici più solidi che abbiamo trovato, italiani quando esistono, esteri quando mancano, e li abbiamo letti. Ogni blocco ha tre parti: il dato, che cosa ci dice e che cosa ne pensiamo noi. La terza parte è un'opinione e la chiamiamo così.</p>
+    <p class="topdl"><a href="#scarica" data-umami-event="scarica-alto">Preferisci il PDF da girare in salone? Scaricalo qui &darr;</a></p>
 
     <section class="blk" data-reveal>
       <div class="badge">1</div>
@@ -280,18 +290,20 @@
       </div>
     </details>
 
-    <section class="join" id="iscriviti">
+    <section class="join" id="scarica">
       <img class="jtony" src="../../assets/img/tony-hint.png" alt="Tony" width="96">
-      <p class="jeye">Il prossimo numero</p>
-      <h2>Iscriviti e decidi tu di che cosa parliamo</h2>
-      <p class="jlead">Questo report non lo scriviamo per riempire una casella di posta. Lo scriviamo per chi vende auto e vuole risposte da dare ai propri clienti. Più ci dici di te, più le risposte saranno tue.</p>
-      <div class="jsteps">
-        <div class="js1"><span>1</span><h3>Ricevi i prossimi numeri</h3><p>Un tema per volta, i dati letti e la nostra opinione. Gratis, ti cancelli con un clic.</p></div>
-        <div class="js1"><span>2</span><h3>Raccontaci chi sei</h3><p>Ruolo, tipo di concessionaria, marchi e volumi: così i numeri parlano della tua realtà, non di una media.</p></div>
-        <div class="js1"><span>3</span><h3>Dicci che cosa ti frena</h3><p>Che cosa rende difficile vendere l'elettrico ai tuoi clienti: ciò che ci indichi diventa il tema dei prossimi numeri.</p></div>
-      </div>
-      <p class="jcta"><a class="btn btn-big" data-umami-event="iscriviti-pulsante" href="https://e0fe6896.sibforms.com/serve/MUIFAIJdRVqk5Xha9LY-mc96Kf79JB7TmCG6zI6FQNcdV5NDkPRPhSyToJR9AvgnxpNebh-_LlvMGFCLqefhPdA8BUzTcV6qJLNhhU-00Nv-Mc0hNhz_iZ2-C3QUhA-gQrx6NxLYbkeqmgOh9waqIPQAuvt3_8ZwZMCoE9YrofJZdwKQ1enP1KcyB6nyNgL7hiPT4rvD2Vi5QF7U2g==">Iscrivimi al report</a></p>
-      <p class="jnote">Serve solo l'email, le domande sono facoltative. Titolare del trattamento: Alex Pallotti. Leggi l'<a href="https://subitoelettrico.it/privacy/">informativa privacy</a>; le caselle del modulo sono facoltative e puoi revocarle in ogni momento.</p>
+      <p class="jeye">Il report completo</p>
+      <h2>Scarica il PDF, gratis</h2>
+      <p class="jlead">Le quattro analisi, la nostra tesi e tutte le fonti, in un file da girare a chi in salone parla con i clienti. Ogni mese ne esce uno nuovo.</p>
+      <form class="dl" method="POST" action="https://e0fe6896.sibforms.com/serve/MUIFAAsnBWNgn3LZHI6Wh2hymXyzkitTvvCZMzzi730pENNNP76-LFdh3zagV9CbH_uH3qcY1ko9-nKoJ97QAej40u3MWGGwAsyOr2wOzo9ZeTnvA4IzO530v8moFX4llNmXRvyM2UgCGULWOAQ-tSHBJXk0UfSfco2CJFlK08mY_DtUB3Y_6MtyZxS2owozitFplGsENW0g-sZzSQ==">
+        <label class="sr" for="EMAIL">La tua email</label>
+        <input type="email" id="EMAIL" name="EMAIL" required autocomplete="email" placeholder="La tua email di lavoro">
+        <input type="text" name="email_address_check" value="" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="it">
+        <input type="hidden" name="html_type" value="simple">
+        <button class="btn-big" type="submit" data-umami-event="scarica-invio">Scarica il PDF</button>
+      </form>
+      <p class="jnote">Lasci l'email, scarichi subito il PDF e ricevi i prossimi numeri, uno al mese. Ti cancelli con un clic. Titolare: Alex Pallotti, <a href="https://subitoelettrico.it/privacy/">informativa privacy</a>.</p>
       <p class="jalt">Preferisci scrivere due righe? <a href="mailto:tony@subitoelettrico.it">tony@subitoelettrico.it</a></p>
     </section>
 
@@ -321,7 +333,7 @@
 <script>
 (function(){
  if(!('IntersectionObserver' in window))return;
- var mete=[['.recap','vista-tesi'],['#iscriviti','vista-iscriviti']];
+ var mete=[['.recap','vista-tesi'],['#scarica','vista-scarica']];
  mete.forEach(function(m){
   var el=document.querySelector(m[0]);if(!el)return;
   var fatto=false;
